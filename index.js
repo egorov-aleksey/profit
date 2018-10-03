@@ -127,7 +127,7 @@ let makeConditions = function (searchQuery) {
         conds += " and lower(s.name) like lower('" + searchQuery['senderName'] + "')\n";
     }
     if (searchQuery['senderCode']) {
-        conds += " and sc.code = '" + searchQuery['senderCode'] + "')\n";
+        conds += " and sc.code = '" + searchQuery['senderCode'] + "'\n";
     }
     //consignee
     if (searchQuery['consigneeId']) {
@@ -137,7 +137,7 @@ let makeConditions = function (searchQuery) {
         conds += " and lower(c.name) like lower('" + searchQuery['consigneeName'] + "')\n";
     }
     if (searchQuery['consigneeCode']) {
-        conds += " and cc.code = '" + searchQuery['consigneeCode'] + "')\n";
+        conds += " and cc.code = '" + searchQuery['consigneeCode'] + "'\n";
     }
     //client
     if (searchQuery['clientId']) {
