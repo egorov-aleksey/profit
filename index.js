@@ -103,10 +103,9 @@ app.post('/operation/find', function (req, res) {
         .catch(e => {
             let msg = e.message || 'unknown error';
 
-            res
-                .send({
-                    error: msg
-                });
+            res.send({
+                error: msg
+            });
         });
 });
 
